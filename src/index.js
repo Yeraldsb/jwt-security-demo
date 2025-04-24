@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 app.post("/login", (req, res) => {
-    //Curl -X POST http://localhost:3000/login -H "Content-Type: application/json" -d '{"username":"admin","password":"admin"}'
+    //curl -X POST http://localhost:3000/login -H "Content-Type: application/json" -d '{"username":"admin","password":"admin"}'
 
   const { username, password  } = req.body;
 
